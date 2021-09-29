@@ -1,0 +1,51 @@
+.users-container {
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .action-add-block {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+
+    .users-data-container {
+        max-width: 1100px;
+        min-width: 1100px;
+        border: solid 1px;
+        border-radius: 8px;
+        text-align: center;
+        background: white;
+
+        .user-main-container {
+            &:not(:last-child) {
+                border-bottom: solid 1px;
+            }
+        }
+        .titles {
+            display: flex;
+            align-items: center;
+            &:not(:last-child) {
+                border-bottom: solid 1px;
+            }
+
+            .title-td {
+                width: 15%;
+                padding: 10px 0;
+                &:not(:last-child) {
+                    border-right: solid 1px;
+                }
+            }
+
+            .id-td {
+                width: 10%;
+            }
+
+            .email-td {
+                width: 30%;
+            }
+        }
+    }
+}

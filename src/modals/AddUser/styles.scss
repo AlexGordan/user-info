@@ -1,0 +1,15 @@
+.form-block {
+    .input-block {
+        display: flex;
+        flex-direction: column;
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+
+        .error {
+            color: red;
+            font-weight: 500;
+            margin: 0;
+        }
+    }
+}

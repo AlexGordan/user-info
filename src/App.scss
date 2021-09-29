@@ -1,0 +1,36 @@
+.App {
+    height: 100%;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.btn {
+    background-color: white;
+    border: solid 1px;
+    outline: none;
+    padding: 10px 20px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: black;
+        color: white;
+
+        a {
+            color: white;
+        }
+    }
+
+    &:disabled {
+        background: #ececec;
+        border: solid 1px #ececec;
+        cursor: not-allowed;
+
+        &:hover {
+            background: #ececec;
+            color: black;
+            border: solid 1px #ececec;
+        }
+    }
+}

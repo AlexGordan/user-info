@@ -1,0 +1,25 @@
+.user-main-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+        background-color: black;
+        color: white;
+    }
+
+    .title-td {
+        width: 15%;
+        padding: 10px 0;
+        &:not(:last-child) {
+            border-right: solid 1px;
+        }
+    }
+
+    .email-td {
+        width: 30%;
+    }
+
+    .id-td {
+        width: 10%;
+    }
+}
